@@ -1,2 +1,50 @@
-# arcade-07
-handheld gaming console built with arduino uno. featuring snake and max7219 matrix.
+# arcade-07 🕹️
+> a hardware-based gaming suite running on arduino. no fluff, just pure pixel logic.
+
+### 🚀 Project overview
+ARCADE 07 is a custom-built snake game and multi-game console running on an Arduino Uno. The system features a visual output powered by a 32x8 MAX7219 Dot Matrix and control inputs via a KY-023 joystick and a 10kΩ potentiometer for speed control.
+
+### 🛠️ Hardware requirements
+To build this project, you need the following components
+* Arduino Uno + Power Cable
+* 8*32 LED Matrix (MAX7219 Dot Matrix Module, 4 in one display with 5p line)
+* KY-023 XY-axis Joystick Module
+* 10kΩ Potentiometer
+* 2x LEDs (Blue and Green)
+* 2x 220Ω Resistors
+* Breadboard and jumper wires
+* 9V Battery
+
+### 🔌 Circuit connections
+Based on the circuit block diagram, wire the components as follows :
+* **Power System:** Connect the 9V Battery to the Arduino VIN and GND pins.
+* **MAX7219 Matrix (Visual Output):** Connect VCC to Arduino +5V and GND to GND. Connect DIN to Digital Pin 11, CS to Digital Pin 10, and CLK to Digital Pin 13.
+* **KY-023 Joystick (Control Input):** Connect VCC to +5V and GND to GND. Connect VRx to Analog Pin A0, VRy to Analog Pin A1, and the SW (switch) to Analog Pin A2.
+* **Speed Control:** Connect the outer pins of the 10kΩ potentiometer to +5V and GND, and the wiper pin to Analog Pin A3.
+* **Indicators:** Connect the Blue LED to Digital Pin 12 (SuperMode) via a 220Ω resistor. Connect the Green LED to Analog Pin A4 (DoublePoints) via a 220Ω resistor.
+
+### 🎮 How to play guide
+The console features a boot menu and two distinct game modes.
+
+#### Getting Started & Menu
+* Power on the console to see the 'A07' boot screen.
+* Navigate the menu using the Joystick LEFT and RIGHT.
+* Click the Joystick to select your game.
+
+#### Game 1: Snake Game ("The Dot Eater")
+* **Controls:** Steer the snake head (leader pixel) using Joystick Up/Down/Left/Right.
+* **Objective:** Eat the food pellet (static pixels) to gain +5 points and increase your length.
+* **Hazards:** Avoid hitting your own body trail or the walls.
+
+#### Game 2: Space Defender ("Asteroid Buster")
+* **Controls:** Move your starship (">" shape) using Joystick Up/Down.
+* **Action:** Fire your laser (plasma bolt) by clicking the Joystick.
+* **Objective:** Hit the asteroid (slow pixel) to score +1 point.
+
+#### Difficulty Settings
+* Use the 10kΩ potentiometer to adjust the game speed.
+* Turn left for a slow/easy mode giving you more time.
+* Turn right for a fast/hard mode, which acts as a score multiplier.
+
+---
+*built for the love of physics and pixels.*
