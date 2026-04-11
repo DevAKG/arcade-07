@@ -15,8 +15,15 @@ To build this project, you need the following components
 * Breadboard and jumper wires
 * 9V Battery
 
+## 💻 Software & Libraries
+To compile this code, you will need the following libraries installed in your Arduino IDE:
+* **[MD_MAX72xx by majicDesigns]**
+
+## ⚠️ Technical Note
+* **Pin 12 (Blue LED):** On some Arduino Uno boards, Pin 12 is reserved for SPI communication (MISO). If your Blue LED doesn't light up or flickers, move it to **Digital Pin 9** and update the `LED_PIN` in the code.
+
 ### 🔌 Circuit connections
-Based on the circuit block diagram, wire the components as follows :
+Wire the components as follows :
 * **Power System:** Connect the 9V Battery to the Arduino VIN and GND pins.
 * **MAX7219 Matrix (Visual Output):** Connect VCC to Arduino +5V and GND to GND. Connect DIN to Digital Pin 11, CS to Digital Pin 10, and CLK to Digital Pin 13.
 * **KY-023 Joystick (Control Input):** Connect VCC to +5V and GND to GND. Connect VRx to Analog Pin A0, VRy to Analog Pin A1, and the SW (switch) to Analog Pin A2.
