@@ -31,22 +31,8 @@ Wire the components as follows :
 * **Indicators:** Connect the Blue LED to Digital Pin 12 (SuperMode) via a 220Ω resistor. Connect the Green LED to Analog Pin A4 (DoublePoints) via a 220Ω resistor.
 
 ### 🎮 How to play guide
-The console features a boot menu and two distinct game modes.
+refer to "ARCADE_07 MANUAL.pdf"
 
-#### Getting Started & Menu
-* Power on the console to see the 'A07' boot screen.
-* Navigate the menu using the Joystick LEFT and RIGHT.
-* Click the Joystick to select your game.
-
-#### Game 1: Snake Game ("The Dot Eater")
-* **Controls:** Steer the snake head (leader pixel) using Joystick Up/Down/Left/Right.
-* **Objective:** Eat the food pellet (static pixels) to gain +5 points and increase your length.
-* **Hazards:** Avoid hitting your own body trail or the walls.
-
-#### Game 2: Space Defender ("Asteroid Buster")
-* **Controls:** Move your starship (">" shape) using Joystick Up/Down.
-* **Action:** Fire your laser (plasma bolt) by clicking the Joystick.
-* **Objective:** Hit the asteroid (slow pixel) to score +1 point.
 
 #### Difficulty Settings
 * Use the 10kΩ potentiometer to adjust the game speed.
