@@ -1,4 +1,4 @@
-# arcade-07 🕹️
+# ARCADE-07 🕹️
 > a hardware-based gaming suite running on arduino. no fluff, just pure pixel logic.
 
 ### 🚀 Project overview
