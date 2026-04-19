@@ -33,11 +33,5 @@ Wire the components as follows :
 ### 🎮 How to play guide
 refer to "ARCADE_07 MANUAL.pdf"
 
-
-#### Difficulty Settings
-* Use the 10kΩ potentiometer to adjust the game speed.
-* Turn left for a slow/easy mode giving you more time.
-* Turn right for a fast/hard mode, which acts as a score multiplier.
-
 ---
 *built for the love of physics and pixels.*
